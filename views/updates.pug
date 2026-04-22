@@ -1,0 +1,18 @@
+doctype html
+html
+    head
+        title= `${title}`
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(rel="stylesheet", href="/css/style.css")
+    body
+        h1 Update Custom Object Form
+        a(href="/") Return to the homepage
+        .form-wrapper
+            form(method="POST" action="/update-cobj")
+                label(for="name") Name
+                input(type="text" id="name" name="name")
+                label(for="species") Species
+                input(type="text" id="species" name="species")
+                label(for="favorite_toy") Favorite Toy
+                input(type="text" id="favorite_toy" name="favorite_toy")
+                input(type="submit" value="Submit")
